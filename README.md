@@ -17,3 +17,7 @@ The integration with the ticketing system must be implemented, you may implement
 ## Info of the event
 
 The event details that has triggered the callback will be available on the $_POST variable.
+
+## Verify if ticket was already opened
+
+You may implement a new logic to the method 'ticketExists()'. This method should return a boolean to inform if a new ticket must be generated of if the event referrs to an existing ticket. The implementation on the repo is made using a file record.
